@@ -1,0 +1,138 @@
+/* for development - check layout */
+/* comment out */
+/* header, div, main, nav, aside, footer {
+  border: 1px solid red;
+} */
+#logo {
+    margin-left: -30px;
+    width: 250px;
+    height: 200px;
+    /* border: 1px solid red */
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #E9E6D7;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #E9E6D7;
+    border-radius: 5px;
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+    color: #4d5052;
+}
+
+main {
+    flex: 1;
+}
+
+nav {
+    order: -1;
+}
+
+nav,
+aside {
+    margin-top: 30px;
+    background-color: #4AA4B2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #337079;
+}
+
+h1 {
+    border: 2px solid black;
+    background-color: #E9E8E1;
+    box-shadow: 2px 2px 5px ;
+    border-radius: 15px;
+    margin-top: -130px;
+    font-size: 80px;
+    font-family: Lato;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 4px 4px 4px;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+h6 {
+    margin-top: -40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Lato;
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+select[type="select"] {
+    flex-basis: 50%;
+    padding: .2em;
+    border-radius: 5px;
+    font-family: Lato;
+    text-align: center;
+}
+
+option {
+    text-align: center;
+}
+
+input[type="submit"] {
+    flex-basis: 51%;
+    padding: .5em;
+    margin: .5em;
+    margin-top: 1.5em;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+label {
+    flex-basis: 51%;
+    text-align: center;
+}
+
+.bike {
+    margin: 5px;
+    padding: 5px 15px 5px 15px;
+    background-color: #E4E1DE;
+    border-radius: 5px;
+}
+
+
+footer {
+    font-size: 13px;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex: 1;
+    }
+
+
+
+    nav,
+    aside {
+        flex: 0 0 12em;
+    }
+}
